@@ -1,11 +1,31 @@
-# WinMonitor
-Windows system monitor widget
+# SysMonitor
+A Windows system monitor widget, Tracks CPU, RAM, ESTABLISHED CONNECTIONS and HARD DRIVERS
+The Widget uses the windows registry editor to add and remove widget on start up.
 
-# Project is not finished!
-This project is still in progress, needs more work to turn it into a widget
-if you want to clone and use as is more then welcome to but be adviced its not 100% ready I will 
-continue to work on this uses
-1. Tkinter
-2. Psutil
-reads system resources pretty much straight forward refer to the image
-<img width="817" height="739" alt="Screenshot 2025-11-01 223747" src="https://github.com/user-attachments/assets/1bd5a4a9-4c6d-4a55-b1dc-b259092771fd" />
+# How to install
+1. Download or clone repo
+2. download and use pyinstaller to make it a .exe bootable application
+   https://pyinstaller.org/en/stable/installation.html
+   
+   this command should work
+   
+   pyinstaller --onefile --icon CardiacMonitor_icon-icons.com_75042.ico --noconsole --name SysMonitor .\monitor.py
+4. once you build it simply run it as every other .exe file
+
+# Once Running
+Once you run it the widget will edit the registy and add its self to the startup
+widget is dragable across multiple screens or you can place it anywhere you like
+if you want to exit it mouse over the widget and right click.
+this will exist the widget and remove itself from the registry editor so no more start on startup
+
+# How to Read
+* CPU's in use will turn green
+* CPU's using more then 90% will turn read
+* CPU's not used will be white
+* Other information is updated and stays the same.
+
+# Modules used 
+1. Tkinter for the GUI
+2. psutil to read system resources
+
+<img width="965" height="841" alt="Screenshot 2025-11-11 085613" src="https://github.com/user-attachments/assets/55b017c5-696c-479b-ad5f-c6fecdecb373" />
