@@ -19,9 +19,9 @@ if you want to exit it mouse over the widget and right click.
 this will exist the widget and remove itself from the registry editor so no more start on startup
 
 # How to Read
-* CPU's in use will turn green
-* CPU's using more then 90% will turn read
-* CPU's not used will be white
+* Cores in use will turn green
+* Cores using more then 90% will turn read
+* Cores not used will be white
 * Other information is updated and stays the same.
 
 # Modules used 
